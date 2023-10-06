@@ -8,8 +8,6 @@ import useStyles from "./styles"
 export default function Posts({ setCurrentId }) {
   const posts = useSelector((state) => state.posts)
   const classes = useStyles()
-
-  console.log(posts)
   
   return (
     !posts.lenght === 0 ? <CircularProgress /> : (
